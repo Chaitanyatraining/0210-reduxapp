@@ -5,10 +5,14 @@ const watchListSlice = createSlice({
     initialState: [],
     reducers:{
         add(state, action){
+            console.log(action)
             state.push(action.payload)
+        },
+        remove(state,action){
+
         }
     }
 })
 
 export default watchListSlice.reducer
-export const {add} = watchListSlice.actions
+export const {add, remove} = watchListSlice.actions
